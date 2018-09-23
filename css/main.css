@@ -1,22 +1,18 @@
 
 body {
-margin-top: 5%;
-
-}
-
-table {
-    margin: auto;
-    padding: 10px;
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-  
+   background-color: mistyrose; 
+   /*add background image */
 }
 
 
-td {
-    border-radius: 50%;
-    padding: 2px;
-    background: linear-gradient(to bottom, #f6f289 0%, #ffd382 100%); 
-    width: 100px;
-    height: 100px;
+#container {
+    display: flex;
+    margin: 0 auto;
+    
 }
 
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+} 

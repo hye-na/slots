@@ -1,40 +1,51 @@
 /*----- constants -----*/
-const PLAYER_ONE
-const PLAYER_TWO
+const REELS = {
+
+
+
+}; //3 reels
 
 /*----- app's state (variables) -----*/
-var board = [null, null .....];
-var playerTurn; //keeping track of who's turn
-var gameOver; //player wins or loses
+var r01; //reals
+var r02;
+var r03;
 
 
-/*----- cached element references (refer back to and reuse) -----*/
-$('td')
+/*----- cached element references -----*/
+
 
 /*----- event listeners -----*/
-board.click(function) //user clicks on board on any empty slot <td>
+setTimeout
+
+//* user clicks
+
+//[EXTRA] event: keyboard "keydown" "keyup" like User can press down on spacebar to stop the reels from spinning
+
+/*----- functions -----*/
+
+function init() {
+
+}
+
+function spinReel(r) {
 
 
-/*----- functions (be able to reuse them in multiple different places) -----*/
-//INIT FUNCTION
-//call whatever this function to use piece
+}
 
-
-//DURING GAMEPLAY
-// * create your own render function. using methods, or build-in functions, like .push
-// * player changes turn
-var checkWinner //to see if all four pieces connect
-//do animation or celebratory text
-
-
-//END OF GAME
-var resetGame; //clears the board the board at any time
+// function render() {
+// 	renderScore();
+// 	renderBoard();
+// 	if (winner) {
+// 		renderWinnerMessage();
+// 	} else {
+// 		renderTurnMessage();
+// 	}
+// }
 
 
 
-//PSEUDOCODE
-//two players. one player selects piece
-//player one selects empty slot
-//drop pieces
-//check for the winner
+//[OPTION] Play a bet
 
+function reset() {
+
+}
