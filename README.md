@@ -1,4 +1,4 @@
-#SLOTS
+# SLOTS
 
 ![wireframes](img/wireframes.jpg)
 
