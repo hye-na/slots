@@ -1,7 +1,15 @@
-#Welcome
+#SLOTS
+
+![wireframes](img/wireframes.jpg)
+
+### Wireframes:
+
+Desktop and mobile version.
+Mobile is viewed horizontally for readibility and swiping function.
 
 
-### User Stories
+
+### User Stories:
 
 **The User would…** 
 
@@ -14,7 +22,8 @@
 4. (Optional) If matches, the user gains more winnings and animation is triggered during winnings
 
 
-###Pseudocode--
+
+### Pseudocode:
 
 * Initiate by showing 3 blank slot reels wrapped inside a container
 
