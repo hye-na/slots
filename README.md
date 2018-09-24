@@ -38,7 +38,6 @@ Mobile is viewed horizontally for readibility and swiping function.
         - doge : 100 pts 
         - alpaca: 80 pts
         - bear : 60 pts
-        - otter : 40 pts
         - grumpy : 20 pts
     * the probility of getting 3 doges is the lowest
     * If you get all 3 grumpy cats, you lose EVERYTHING. Maybe make 1-2 grumpy cats lose a few points?
