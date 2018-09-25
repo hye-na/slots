@@ -1,77 +1,124 @@
 /*----- constants -----*/
-var slotScreen = [1, 2, 3]; //to represent the screens
 
-var tiles = {
-    "doge": 100,
-    "alpaca": 80,
-    "bear": 60,
-    "grumpy": 20
-}
+const tiles = [
+    {
+        points: 100,
+        img: "img/doge.png"
+    },
+    {
+        points: 80,
+        img: "img/alpaca.png"
+    },
+    {
+        points: 60,
+        img: "img/bear.png"
+    },
+    {
+        points: 20,
+        img: "img/grumpy.png"
+    }
+];
+
+const weight = [0, 1, 1, 2, 2, 2, 3, 3, 3, 3];
+
+const winningCombo = [[0, 0, 0], [1, 1, 1], [2, 2, 2], [3, 3, 3]];
+
 
 /*----- app's state (variables) -----*/
-
-// var spin;
-// var win;
-// var lose;
-// var points;
-
+var reels;
+var points = 10;
 
 /*----- cached element references -----*/
 
+var msg = document.querySelector('h1');
+var reelImgs = document.querySelectorAll("#container img");
+
 
 /*----- event listeners -----*/
+document.getElementById("spinBtn").addEventListener("click", handleSpin);
 
-//* user clicks
-slotScreen = document.getElementById('slot-a');
-
-
-//[MOBILE] event: keyboard "keydown" "keyup" like User can press down on spacebar to stop the reels from spinning
+document.addEventListener("keydown", function (event) {
+    if (event.keyCode === 32) {
+        handleSpin();
+    }
+})
 
 /*----- functions -----*/
 
 function init() {
+    reels;
+    points = 0;
+};
 
-    function spinIt {
-      .click   //user clicks and all 3 slot reels spin
+function handleSpin() {
+    reels = [
+        weight[getRandomUpTo(tiles.length)],
+        weight[getRandomUpTo(tiles.length)],
+        weight[getRandomUpTo(tiles.length)]
+    ];
+    checkCombo();
+    render();
+}
+
+function checkCombo() {
+
+    for (var i = 0; i < winningCombo.length; i++) {
+        const [a, b, c] = winningCombo[i]
+        if (reels[0] === a && reels[1] === b && reels[2] === c) {
+            reels.forEach(function (reel) {
+                points += tiles[reel].points
+            })
+            console.log(points)
+        }
+        console.log(a, b, c)
+        console.log(winningCombo[i])
     }
 
-    function randomSpin() { } // the reels spin at random intervals 
-    //and stop at random invervals:
-    // loop through tiles array/object with .forEach
-    // use Math.random(); ???   to
-    // use setTimeout
-    // make sure slot reels all stop spinning
-
-    function winPoints() { } //if 3 tiles match, it acumulates points
-    // winning combos 
-    // "doge", "doge", "doge" = 1000
-    // "alpaca", "alpaca" "alpaca" = 800
-    // "bear", "bear", "bear" = 600
-    // "grumpy", "grumpy", "grumpy"= 200
 }
-    //and points would show on the bottom <div> or <footer>
-    //otherwise try again
-        //winning msg shows and 
-            //insert sound/animation for matching 3
-        //else show message "Better luck next time" 
-            //play sad sound for losing
 
-    //show ternary operator showing if matching 3 winning tiles show msg "You win at life!"
-        //otherwise "Better luck next time..."
 
-};
+function render() { //what users see
+
+    setTimeout(() => {
+        reelImgs.forEach(function (img, idx) {
+            img.src = tiles[reels[idx]].img;
+        }, 3000);
+    });
+
+
+}
+
+function getRandomUpTo(num) {
+    return Math.floor(Math.random() * num);
+}
+
+
+
+
+//DO AT END
+// the slot reels spin at random intervals 
+//and stop at random invervals:
+// use setTimeout
+// clearInterval. make sure slot reels all stop spinning
+
+
+
+
+
+// function getMatch() {
+//     reels === //all match) ? true : false ;
+// }
+
+
+//if 3 tiles match, it acumulates points and 
+//triggers message
+//insert sound/animation for matching 3
+//else show message "Better luck next time" 
+//play sad sound for losing
+
+
+// losePoints //grumpy cat makes you lose everything~
+
 
 /*----- Extra Notes -----*/
 //Animate Slots and lever using Sass animate
-
-
-//////EXAMPLE of Render function/////
-// function render() {
-// 	renderScore();
-// 	renderBoard();
-// 	if (winner) {
-// 		renderWinnerMessage();
-// 	} else {
-// 		renderTurnMessage();
-// 	}
-// }
