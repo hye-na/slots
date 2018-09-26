@@ -26,22 +26,27 @@ const winningCombo = [[0, 0, 0], [1, 1, 1], [2, 2, 2], [3, 3, 3]];
 
 /*----- app's state (variables) -----*/
 var reels;
-var points = 10;
+var points = 0;
 
 /*----- cached element references -----*/
 
 var msg = document.querySelector('h1');
 var reelImgs = document.querySelectorAll("#container img");
 
-
 /*----- event listeners -----*/
-document.getElementById("spinBtn").addEventListener("click", handleSpin);
 
 document.addEventListener("keydown", function (event) {
     if (event.keyCode === 32) {
         handleSpin();
     }
 })
+
+document.addEventListener("keyup", function (event) {
+    if (event.keyCode === 32) {
+        checkWin();
+    }
+})
+
 
 /*----- functions -----*/
 
@@ -52,15 +57,14 @@ function init() {
 
 function handleSpin() {
     reels = [
-        weight[getRandomUpTo(tiles.length)],
-        weight[getRandomUpTo(tiles.length)],
-        weight[getRandomUpTo(tiles.length)]
+        weight[getRandom(tiles.length)],
+        weight[getRandom(tiles.length)],
+        weight[getRandom(tiles.length)]
     ];
-    checkCombo();
     render();
 }
 
-function checkCombo() {
+function checkWin() {
 
     for (var i = 0; i < winningCombo.length; i++) {
         const [a, b, c] = winningCombo[i]
@@ -72,53 +76,38 @@ function checkCombo() {
         }
         console.log(a, b, c)
         console.log(winningCombo[i])
+        msg.innerText = points;
     }
 
 }
 
 
-function render() { //what users see
-
-    setTimeout(() => {
-        reelImgs.forEach(function (img, idx) {
-            img.src = tiles[reels[idx]].img;
-        }, 3000);
-    });
-
+function render() {
+    reelImgs.forEach(function (img, idx) {
+        img.src = tiles[reels[idx]].img;
+    })
 
 }
 
-function getRandomUpTo(num) {
-    return Math.floor(Math.random() * num);
-}
+function getRandom(num) {
+    return Math.floor(Math.random() * num)
+};
 
 
 
 
-//DO AT END
-// the slot reels spin at random intervals 
-//and stop at random invervals:
-// use setTimeout
-// clearInterval. make sure slot reels all stop spinning
+//triggers message?
+
+//insert sound for during spin
+//pop sounds for stopping spin
 
 
-
-
-
-// function getMatch() {
-//     reels === //all match) ? true : false ;
-// }
-
-
-//if 3 tiles match, it acumulates points and 
-//triggers message
-//insert sound/animation for matching 3
 //else show message "Better luck next time" 
 //play sad sound for losing
 
 
-// losePoints //grumpy cat makes you lose everything~
-
 
 /*----- Extra Notes -----*/
 //Animate Slots and lever using Sass animate
+
+// losePoints //grumpy cat makes you lose everything~
