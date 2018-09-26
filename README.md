@@ -4,8 +4,9 @@
 
 ### Wireframes:
 
-A stress-free version of slots.
-Desktop and mobile version.
+A stress-free version of slots.<br>
+
+Desktop and mobile version.<br>
 Mobile is viewed horizontally for readibility and swiping function.
 
 ### User Stories:
