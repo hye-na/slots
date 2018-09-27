@@ -1,36 +1,140 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    }    
 
 body {
    background-color: mistyrose; 
+   background-image: url("../img/7792.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-
-button {
+main {
+    width: 60%;
     margin: 0 auto;
-    border: 5px solid black;
-    background-color: white;
-    padding: 10px 140px 10px 140px;
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-   
+    margin-top: 4%;
+    border: 50px solid #f5f5f5;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
 }
 
-#container, h1 {
+section, footer {
     display: flex;
     justify-content: center;
-    
 }
 
+header {
+    display: flex;
+    margin-top: -50px;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+p, span { 
+  font-family: 'Baloo';
+}
+
+p {
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0.5px 2px 4px #ff6a6a;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: initial;
+    animation-delay: 1.5s;
+}
+
+iframe {
+    opacity: 0.5;
+}
 
 div {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 2%;
     background-color: white;
-    border: 1px solid grey;
+    border: 0.5px solid #dfdbe0;
 } 
 
 div img {
     width: 100%;
 }
 
+button { /* spacebar */
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Roboto Mono';
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#copyright, footer>a {
+    margin-top: 5%;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Roboto';
+}
+
+/* animation generator from theappsguruz */
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+        }
+    @-webkit-keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+        }
+    40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+        }
+    70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+        }
+    90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+        }
+    }
+
+    @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+        }
+    40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+        }
+    70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+        }
+    90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+    }
+     

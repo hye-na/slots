@@ -3,19 +3,19 @@
 const tiles = [
     {
         points: 100,
-        img: "img/doge.png"
+        img: 'img/doge.png'
     },
     {
         points: 80,
-        img: "img/alpaca.png"
+        img: 'img/alpaca.png'
     },
     {
         points: 60,
-        img: "img/bear.png"
+        img: 'img/bear.png'
     },
     {
         points: 20,
-        img: "img/grumpy.png"
+        img: 'img/grumpy.png'
     }
 ];
 
@@ -30,18 +30,19 @@ var points = 0;
 
 /*----- cached element references -----*/
 
-var msg = document.querySelector('h1');
-var reelImgs = document.querySelectorAll("#container img");
+var msg = document.getElementById('pts');
+var reelImgs = document.querySelectorAll('section img');
+var delay = document.getElementsByTagName('p');
 
 /*----- event listeners -----*/
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener('keydown', function (event) {
     if (event.keyCode === 32) {
         handleSpin();
     }
 })
 
-document.addEventListener("keyup", function (event) {
+document.addEventListener('keyup', function (event) {
     if (event.keyCode === 32) {
         checkWin();
     }
@@ -81,7 +82,6 @@ function checkWin() {
 
 }
 
-
 function render() {
     reelImgs.forEach(function (img, idx) {
         img.src = tiles[reels[idx]].img;
@@ -93,21 +93,3 @@ function getRandom(num) {
     return Math.floor(Math.random() * num)
 };
 
-
-
-
-//triggers message?
-
-//insert sound for during spin
-//pop sounds for stopping spin
-
-
-//else show message "Better luck next time" 
-//play sad sound for losing
-
-
-
-/*----- Extra Notes -----*/
-//Animate Slots and lever using Sass animate
-
-// losePoints //grumpy cat makes you lose everything~

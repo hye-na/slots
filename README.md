@@ -7,7 +7,7 @@
 A stress-free version of slots.<br>
 
 Desktop and mobile version.<br>
-Mobile is viewed horizontally for readibility and swiping function.
+Mobile is viewed horizontally for readibility and swiping function. 
 
 ### User Stories:
 
@@ -22,7 +22,7 @@ User would...
 
 * Initiate by showing 3 blank slot reels wrapped inside a container
 
-* After button is clicked (event listener)
+* After button is clicked (event listener):
     * click to trigger spin
     * animate spin and sound
     * set interval for counting down to stop spinning
