@@ -16,25 +16,35 @@
 
     <main>
         <header>
-            <p id="wins">You Win:&nbsp;</p>
-            <p id="pts">0</p>
-            <p>&nbsp;points!</p>
+            <div class="container">
+                <p class="message" id="wins">Credits:&nbsp;</p>
+                <span id="pts">50</span>
+                <p class="message">&nbsp;dollars!</p>
+            </div>
         </header>
 
         <section>
-            <div><img></div>
-            <div><img></div>
-            <div><img></div>
+            <div class="spin-bg"><img></div>
+            <div class="spin-bg"><img></div>
+            <div class="spin-bg"><img></div>
         </section>
 
         <button>press down spacebar</button>
 
-        <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271190152&color=%235d4d5b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        <audio controls style="display:none">
-            <source src="http://butlerccwebdev.net/support/html5-video/media/soundfile.mp3" type="audio/mpeg">
-        </audio>
+        <div class="container">
+            <p>Place a bet: $</p>
+            <p id="betNum">0</p>
 
+            <div class="bet">
+                <button id="1">$1</button>
+                <button id="5">$5</button>
+                <button id="10">$10</button>
+            </div>
+        </div>
+
+        <audio controls src="chocobo.mp3"></audio>
     </main>
+
 
 
 </body>
@@ -42,8 +52,8 @@
 <footer>
     <span id="copyright">&#169; &nbsp; H-H Park 2018 &nbsp;•&nbsp;</span>
     <a href="https://www.freepik.com/free-vector/pastel-bokeh-lights-background_2115003.htm">Background
-        designed by Kjpargeter</a>
-
+        designed by Kjpargeter &nbsp;•&nbsp;</a>
+    <a href="https:// www.midishack.net/ffmidi.htm ">Midi by Aaron Walz. Original composed by Nobuo Uematsu</a>
 </footer>
 
 </html>

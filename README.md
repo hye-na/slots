@@ -12,11 +12,13 @@ Mobile is viewed horizontally for readibility and swiping function.
 ### User Stories:
 
 User would...
+1. place a bet by clicking on button 1, 5, or 10 in USD.
+
 1. press down on space bar to spin the slot machine.
 
 2. see the 3-reel slot machine automatically spin and stop the spinning by letting go of the space bar.
 
-3. watch the points grow into infinity!
+3. if user gets matching combo, then points double. Otherwise, loses bet.
 
 ### Pseudocode:
 
