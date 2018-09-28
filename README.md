@@ -4,17 +4,12 @@ A doge-y twist to a classic game of slots.<br>
 
 *Disclaimer: No animals were harmed during this production.*
 
-[Play with Doge and Friends here](https://hye-na.github.io/slots/)
 
-
-
-![final](img/slots.jpeg)
-
-
-
-### 1.Lo-Fi Wireframe
+### 1. Lo-Fi Wireframe
 
 ![wireframes](img/wireframes.jpg)
+
+______________________________________________
 
 ### 2. User Stories:
 
@@ -24,6 +19,8 @@ User would...
 3. see the 3-reel slot machine automatically spin and stop the spinning by letting go of the space bar.
 4. get matching combo, then credit get added to total. Otherwise, loses bet.
 5. loses the game if credit reaches zero.
+
+______________________________________________
 
 ### 3. Pseudocode:
 
@@ -48,9 +45,18 @@ User would...
 
 * Added bonus: included audio which users can play
 
+______________________________________________
 ### 4. Future implemations: 
 
 * Adding a modal that displays instructions for users
+
+
+
+
+
+
+![final](img/slots.jpeg)
+[Play with Doge and Friends here](https://hye-na.github.io/slots/)
 
 
 
