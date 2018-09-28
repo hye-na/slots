@@ -76,9 +76,9 @@ function init() {
 
 function handleSpin() {
     reels = [
-        weight[getRandom(tiles.length)],
-        weight[getRandom(tiles.length)],
-        weight[getRandom(tiles.length)]
+        weight[getRandom(weight.length)],
+        weight[getRandom(weight.length)],
+        weight[getRandom(weight.length)]
     ];
     render();
 };

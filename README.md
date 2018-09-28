@@ -22,39 +22,14 @@ User would...
 
 ______________________________________________
 
-### 3. Pseudocode:
-
-* Initiate by showing 3 blank slot reels wrapped inside a container
-* Place a bet by clicking on the buttons
-    * Total sum of is displayed
-* While spacebar is held down:
-    * Images cycle through like a spin effect
-        * Weighting (number of outcomes or probability) of matches considered
-    * Infinate amount of spins while holding down spacebar
-* When spacebar is lifted, the reels stop and 
-    * bet is deducted from credit sum with no matches
-    * otherwise, bet is added with winning combo
-* Matching tiles would trigger win/loss by acculumating or losing points.
-* Things to consider: cannot deduct beyond zero dollars and credit stops at zero.
-    * winning combos are 3 of the following:
-        - doge : 5 pts 
-        - alpaca: 4 pts
-        - bear : 3 pts
-        - grumpy : 1 pts
-* Ability to continue playing, otherwise when credit reaches zero a msg appears
-
-* Added bonus: included audio which users can play
-
-______________________________________________
-
-### 4. Technology Used:
+### 3. Technology Used:
 
 * HTML
 * CSS
 * JavaScript
 
 ______________________________________________
-### 5. Next Steps: 
+### 4. Next Steps: 
 
 * Add a modal that displays instructions and how many $ you can win with specific matches 
 * Add reset function
