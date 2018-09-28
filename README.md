@@ -56,7 +56,7 @@ ______________________________________________
 ______________________________________________
 ### 5. Next Steps: 
 
-* Adding a modal that displays instructions for users
+* Add a modal that displays instructions for users
 
 
 
