@@ -46,7 +46,15 @@ ______________________________________________
 * Added bonus: included audio which users can play
 
 ______________________________________________
-### 4. Future implemations: 
+
+### 4. Technology Used:
+
+* HTML
+* CSS
+* JavaScript
+
+______________________________________________
+### 5. Next Steps: 
 
 * Adding a modal that displays instructions for users
 
