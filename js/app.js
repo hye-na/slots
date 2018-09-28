@@ -84,7 +84,6 @@ function handleSpin() {
 };
 
 function checkWin() {
-
     for (var i = 0; i < winningCombo.length; i++) {
         const [a, b, c] = winningCombo[i]
         if (reels[0] === a && reels[1] === b && reels[2] === c) {
@@ -92,7 +91,7 @@ function checkWin() {
                 credits += tiles[reel].points
             })
         }
-        msg.innerText = credits === 0 ? 'You Lose' : credits;
+        msg.innerText = credits === 0 ? 'Sorry Try Again' : credits;
         if (credits === 0) {
             text.forEach(function (p) {
                 p.style.display = 'none';

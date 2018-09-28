@@ -21,8 +21,13 @@ main {
 }
 
 .container {
+    display: inline-block;
+}
+
+.wrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    padding: 3% 1% 0 1%;
 }
 
 section, footer {
@@ -75,7 +80,6 @@ div.spin-bg {
     flex-direction: row;
 }
 
-
 div img {
     width: 100%;
 }
@@ -83,7 +87,7 @@ div img {
 button { /* spacebar */
     margin: 0 auto;
     width: 100%;
-    padding: 10px;
+    padding: 3%;
     font-family: 'Roboto Mono';
     font-size: 1.5em;
     display: flex;
