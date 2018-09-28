@@ -1,43 +1,56 @@
 # SLOTS
 
+A doge-y twist to a classic game of slots.<br>
+
+*Disclaimer: No animals were harmed during this production.*
+
+[Play with Doge and Friends here](https://hye-na.github.io/slots/)
+
+
+
+![final](img/slots.jpeg)
+
+
+
+### 1.Lo-Fi Wireframe
+
 ![wireframes](img/wireframes.jpg)
 
-### Wireframes:
-
-A stress-free version of slots.<br>
-
-Desktop and mobile version.<br>
-Mobile is viewed horizontally for readibility and swiping function. 
-
-### User Stories:
+### 2. User Stories:
 
 User would...
-1. place a bet by clicking on button 1, 5, or 10 in USD.
+1. place a bet by clicking on button 1, 5, or 10 (USD).
+2. press down on space bar to spin the slot machine.
+3. see the 3-reel slot machine automatically spin and stop the spinning by letting go of the space bar.
+4. get matching combo, then credit get added to total. Otherwise, loses bet.
+5. loses the game if credit reaches zero.
 
-1. press down on space bar to spin the slot machine.
-
-2. see the 3-reel slot machine automatically spin and stop the spinning by letting go of the space bar.
-
-3. if user gets matching combo, then points double. Otherwise, loses bet.
-
-### Pseudocode:
+### 3. Pseudocode:
 
 * Initiate by showing 3 blank slot reels wrapped inside a container
-
-* After button is clicked (event listener):
-    * click to trigger spin
-    * animate spin and sound
-    * set interval for counting down to stop spinning
-
+* Place a bet by clicking on the buttons
+    * Total sum of is displayed
+* While spacebar is held down:
+    * Images cycle through like a spin effect
+        * Weighting (number of outcomes or probability) of matches considered
+    * Infinate amount of spins while holding down spacebar
+* When spacebar is lifted, the reels stop and 
+    * bet is deducted from credit sum with no matches
+    * otherwise, bet is added with winning combo
 * Matching tiles would trigger win/loss by acculumating or losing points.
-    * random tiles selected
+* Things to consider: cannot deduct beyond zero dollars and credit stops at zero.
     * winning combos are 3 of the following:
-        - doge : 100 pts 
-        - alpaca: 80 pts
-        - bear : 60 pts
-        - grumpy : 20 pts
-    * the probility of getting 3 doges is the lowest
-    * potential bonus that has yet to be implemented: if you get all 3 grumpy cats, you lose EVERYTHING. 
+        - doge : 5 pts 
+        - alpaca: 4 pts
+        - bear : 3 pts
+        - grumpy : 1 pts
+* Ability to continue playing, otherwise when credit reaches zero a msg appears
 
-* Winning match triggers win event (animations/sound)
-    otherwise it does nothing
+* Added bonus: included audio which users can play
+
+### 4. Future implemations: 
+
+* Adding a modal that displays instructions for users
+
+
+
