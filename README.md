@@ -56,7 +56,9 @@ ______________________________________________
 ______________________________________________
 ### 5. Next Steps: 
 
-* Add a modal that displays instructions for users
+* Add a modal that displays instructions and how many $ you can win with specific matches 
+* Add reset function
+* Make it mobile-friendly
 
 
 
